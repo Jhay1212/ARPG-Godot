@@ -1,5 +1,14 @@
-[gd_scene format=3 uid="uid://ckcpyujih7ri3"]
+[gd_scene load_steps=3 format=3 uid="uid://ckcpyujih7ri3"]
+
+[ext_resource type="Script" path="res://Player/player.gd" id="1_e14uf"]
+[ext_resource type="Texture2D" uid="uid://bwiq8m5oov33" path="res://NinjaAdventure/Actor/Characters/Greenman/SpriteSheet.png" id="1_vqu0d"]
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_e14uf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vqu0d")
+hframes = 7
+vframes = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
