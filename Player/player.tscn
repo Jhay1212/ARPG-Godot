@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ckcpyujih7ri3"]
+[gd_scene load_steps=10 format=3 uid="uid://ckcpyujih7ri3"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_e14uf"]
 [ext_resource type="Texture2D" uid="uid://b87vyr55l1nx6" path="res://NinjaAdventure/Actor/Characters/GreenNinja/SpriteSheet.png" id="2_ibwhr"]
@@ -22,7 +22,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_56nh0"]
 resource_name = "walkDown"
 length = 0.6
-loop_mode = 1
+loop_mode = 2
 step = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -52,10 +52,67 @@ tracks/0/keys = {
 "values": [Vector2i(0, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_bihnd"]
+resource_name = "walkUp"
+length = 0.6
+loop_mode = 2
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.2, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(1, 2), Vector2i(1, 1), Vector2i(1, 3), Vector2i(1, 4)]
+}
+
+[sub_resource type="Animation" id="Animation_2gd8u"]
+resource_name = "walkRight"
+length = 0.6
+loop_mode = 2
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.2, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(3, 2), Vector2i(3, 1), Vector2i(3, 3), Vector2i(3, 4)]
+}
+
+[sub_resource type="Animation" id="Animation_tuycl"]
+resource_name = "walkLeft"
+length = 0.6
+loop_mode = 2
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.2, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(2, 2), Vector2i(2, 1), Vector2i(2, 3), Vector2i(2, 4)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sg504"]
 _data = {
 "RESET": SubResource("Animation_snbt2"),
 "walkDown": SubResource("Animation_56nh0"),
+"walkLeft": SubResource("Animation_tuycl"),
+"walkRight": SubResource("Animation_2gd8u"),
+"walkUp": SubResource("Animation_bihnd"),
 "walk_down": SubResource("Animation_5t2qx")
 }
 
