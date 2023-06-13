@@ -142,3 +142,5 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+z_index = 1
+y_sort_enabled = true

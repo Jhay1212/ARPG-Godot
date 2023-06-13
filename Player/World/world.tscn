@@ -470,6 +470,7 @@ texture = ExtResource("2_3nwe1")
 texture = ExtResource("3_mjnw3")
 0:0/size_in_atlas = Vector2i(2, 2)
 0:0/0 = 0
+0:0/0/y_sort_origin = 15
 2:0/0 = 0
 3:0/0 = 0
 4:0/0 = 0
@@ -749,6 +750,7 @@ sources/1 = SubResource("TileSetAtlasSource_b8kxa")
 sources/2 = SubResource("TileSetAtlasSource_smeri")
 
 [node name="World" type="Node2D"]
+y_sort_enabled = true
 
 [node name="Player" parent="." instance=ExtResource("1_4c4cn")]
 z_index = 1
