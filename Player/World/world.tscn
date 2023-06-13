@@ -755,6 +755,7 @@ z_index = 1
 position = Vector2(492, 247)
 
 [node name="TileMap" type="TileMap" parent="."]
+y_sort_enabled = true
 position = Vector2(0, 5)
 tile_set = SubResource("TileSet_fhumd")
 format = 2
@@ -772,5 +773,5 @@ layer_2/enabled = true
 layer_2/modulate = Color(1, 1, 1, 1)
 layer_2/y_sort_enabled = true
 layer_2/y_sort_origin = 0
-layer_2/z_index = 0
+layer_2/z_index = 1
 layer_2/tile_data = PackedInt32Array(983059, 1, 0, 589854, 1, 0, 327718, 1, 0, 1179681, 1, 0, 1114152, 1, 0, 655384, 1, 0)
