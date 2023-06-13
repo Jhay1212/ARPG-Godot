@@ -1,7 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://ckcpyujih7ri3"]
+[gd_scene load_steps=11 format=3 uid="uid://ckcpyujih7ri3"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_e14uf"]
 [ext_resource type="Texture2D" uid="uid://b87vyr55l1nx6" path="res://NinjaAdventure/Actor/Characters/GreenNinja/SpriteSheet.png" id="2_ibwhr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ud5mq"]
+size = Vector2(23, 14)
 
 [sub_resource type="Animation" id="Animation_snbt2"]
 length = 0.001
@@ -128,6 +131,8 @@ vframes = 7
 frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8.5, 3)
+shape = SubResource("RectangleShape2D_ud5mq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -135,3 +140,9 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(12, 7)
+ignore_rotation = false
+zoom = Vector2(-1, -1)
+position_smoothing_enabled = true
