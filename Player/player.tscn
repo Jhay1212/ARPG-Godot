@@ -142,7 +142,3 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(12, 7)
-ignore_rotation = false
-zoom = Vector2(-1, -1)
-position_smoothing_enabled = true
