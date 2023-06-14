@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://ckcpyujih7ri3"]
+[gd_scene load_steps=12 format=3 uid="uid://ckcpyujih7ri3"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_e14uf"]
 [ext_resource type="Texture2D" uid="uid://b87vyr55l1nx6" path="res://NinjaAdventure/Actor/Characters/GreenNinja/SpriteSheet.png" id="2_ibwhr"]
+[ext_resource type="Script" path="res://Player/camera follow.gd" id="3_xqic5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ud5mq"]
 size = Vector2(26, 12)
@@ -141,7 +142,8 @@ libraries = {
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="camera follow" type="Camera2D" parent="."]
 z_index = 1
 y_sort_enabled = true
 offset = Vector2(0, -8)
+script = ExtResource("3_xqic5")
